@@ -4,13 +4,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule.withServerTransition({appId: 'descms'})
   ],
   providers: [],
   bootstrap: [AppComponent]
