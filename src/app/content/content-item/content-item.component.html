@@ -1,3 +1,7 @@
 <h1>{{contentItem.title}}</h1>
 
-{{contentItem.content}}
+<div *ngIf="contentItem.displayType === 'text'">text</div>
+<div *ngIf="contentItem.displayType === 'video'">videos</div>
+<div *ngIf="contentItem.displayType === 'imageCarousel'">images</div>
+
+<div [innerHTML]="contentItem.content | MarkdownToHtml"></div>

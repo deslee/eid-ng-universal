@@ -10,6 +10,7 @@ export class ContentService {
             id: 'hello-world',
             title: 'Hello world!',
             type: 'post',
+            displayType: 'text',
             tags: ['test'],
             categories: [],
             publishedDate: '2017-11-23',
@@ -18,15 +19,15 @@ export class ContentService {
             metaDescription: 'Hello world! This is a test post.',
             summary: 'Hello world! This is a test post.',
             content: `
-            This is a test post
+This is a test post
 
-            * one
-            * two
-            * three
+* one
+* two
+* three
 
-            1. a
-            2. b
-            3. b
+1. a
+2. b
+3. b
             `,
             properties: {}
         },
@@ -34,6 +35,7 @@ export class ContentService {
             id: 'random-art',
             title: 'Random art',
             type: 'post',
+            displayType: 'imageCarousel',
             tags: ['art'],
             categories: [],
             publishedDate: '2017-11-24',
@@ -42,16 +44,15 @@ export class ContentService {
             metaDescription: 'This is a test art post.',
             summary: 'This is a test art post.',
             content: `
-            This is a test art post
+This is a test art post
 
-            * one
-            * two
+* one
+* two
 
-            1. a
-            2. b
+1. a
+2. b
             `,
             properties: {
-                displayType: 'imageCarousel',
                 carousel: [
                     {
                         url: 'https://previews.123rf.com/images/sonatasun/sonatasun1208/sonatasun120800031/14881853-Glade-of-buttercups-at-sunset-in-mountains-Tien-Shan-Kazakhstan-Stock-Photo.jpg',
@@ -69,6 +70,7 @@ export class ContentService {
             id: 'random-video',
             title: 'Random video',
             type: 'post',
+            displayType: 'video',
             tags: ['video'],
             categories: [],
             publishedDate: '2017-11-25',
@@ -77,16 +79,15 @@ export class ContentService {
             metaDescription: 'This is a test video post.',
             summary: 'This is a test video post.',
             content: `
-            This is a test video post
+This is a test video post
 
-            * one
-            * two
+* one
+* two
 
-            1. a
-            2. b
+1. a
+2. b
             `,
             properties: {
-                displayType: 'video',
                 video: {
                     url: 'https://vimeo.com/243940584',
                     description: 'this is a video'

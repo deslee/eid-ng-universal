@@ -2,6 +2,7 @@ export class Content {
     public id: string;
     public title: string;
     public type: string;
+    public displayType: string;
     public categories: string[];
     public tags: string[];
     public publishedDate: string;

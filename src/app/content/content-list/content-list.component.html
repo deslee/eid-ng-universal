@@ -1,3 +1,11 @@
-<div *ngFor="let content of contentList">
-    <a routerLink="{{content.id}}">Title: {{content.title}}</a>
+<div *ngFor="let contentItem of contentList">
+    <img *ngIf="contentItem.properties.thumbnail" [src]="contentItem.properties.thumbnail" class="thumbnail" />
+    <h1><a routerLink="{{contentItem.id}}">Title: {{contentItem.title}}</a></h1>
+    <div>{{contentItem.summary}}</div>
+
+    <div *ngIf="contentItem.displayType === 'text'">text</div>
+    <div *ngIf="contentItem.displayType === 'video'">videos</div>
+    <div *ngIf="contentItem.displayType === 'imageCarousel'">images</div>
+
+    <br><br>
 </div>
