@@ -1,1 +1,3 @@
-content list
+<div *ngFor="let content of contentList">
+    <a routerLink="{{content.id}}">Title: {{content.title}}</a>
+</div>
