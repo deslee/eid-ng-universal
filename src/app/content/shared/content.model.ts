@@ -3,6 +3,7 @@ export class Content {
     public title: string;
     public type: string;
     public displayType: string;
+    public isFeatured: boolean;
     public categories: string[];
     public tags: string[];
     public publishedDate: string;

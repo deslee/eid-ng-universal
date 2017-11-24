@@ -3,10 +3,10 @@
         <section class="pa3 pa5-ns bb b--black-10">
             <h1 class="f1 f-5-l fw5 tc"><a class="link color-inherit" routerLink="/{{contentItem.id}}">{{contentItem.title}}</a></h1>
             <div class="mv3 mv4-l f3-l tc">
-                <time class="ttu tracked gray">{{contentItem.publishedDate}}</time>
+                <time class="ttu tracked gray">{{contentItem.publishedDate | date:'MMMM dd yyyy'}}</time>
             </div>
 
-            <div class="f5 center lh-copy mw6 mw7-l mv5" [innerHTML]="contentItem.content | MarkdownToHtml"></div>
+            <div class="f5 center lh-copy mw6 mw7-l mv5" [innerHTML]="contentItem.content | markdownToHtml"></div>
             
             <div *ngIf="contentItem.displayType === 'video'">videos</div>
             <div *ngIf="contentItem.displayType === 'imageSet'">
@@ -17,6 +17,7 @@
         </section>
     </app-site-wrapper>
 </ng-template>
+
 <ng-template #notFoundTemplate>
     <section class="vh-100 bg-white roboto-slab">
         <header class="tc ph5 lh-copy">
@@ -30,7 +31,6 @@
             <li class="dib"><a class="f5 f4-ns link black db pv2 ph3 hover-light-purple" routerLink="/resume">Resume</a></li>
         </ul>
     </section>
-
 </ng-template>
 
 <div *ngIf="contentItem; then contentTemplate; else notFoundTemplate"></div>

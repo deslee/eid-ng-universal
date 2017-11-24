@@ -4,5 +4,9 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  title: 'Elizabeth I. Del Rosario',
+  subtitle: 'Storyboard and Visual Development Artist',
+  copyright: 'Elizabeth I. Del Rosario',
+  contentLocation: 'assets/content/mock-data.json'
 };

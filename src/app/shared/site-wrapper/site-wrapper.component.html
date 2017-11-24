@@ -1,21 +1,22 @@
-<header class="cover bg-left" style="background-image: url(assets/header.jpg)">
-    <div class="tc pv4 pv5-ns fire-effect">
-        <h1 class="b--solid b--white ma2 bw1 pa4 dib f3 tracked ttu f2-ns fw6 white shadow">Elizabeth I. Del Rosario</h1>
-        <h2 class="f5-ns f6 white fw2 shadow">Storyboard and Visual Development Artist</h2>
+<header class="cover bg-left bg-navy" style="background-image: url(assets/header.jpg)">
+    <div class="tc pv4 pv5-ns header-effect">
+        <h1 class="b--solid b--white ma2 bw1 pa4 dib f3 tracked ttu f2-ns fw6 white shadow">{{title}}</h1>
+        <h2 class="f5-ns f6 white fw2 shadow">{{subtitle}}</h2>
     </div>
-    <nav class="pa3 pa4-ns tc pb3 fire-effect">
-        <a routerLink="/" class="link dim light-gray shadow f6 f5-ns dib mr3" href="#" title="Home">Home</a>
-        <a routerLink="/bio" class="link dim light-gray shadow f6 f5-ns dib mr3" href="#" title="About">Bio / Contact</a>
-        <a routerLink="/store" class="link dim light-gray shadow f6 f5-ns dib mr3" href="#" title="Store">Store</a>
-        <a routerLink="/" class="link dim light-gray shadow f6 f5-ns dib" href="#" title="Contact">Contact</a>
+    <nav class="pa3 pa4-ns tc pb3 header-effect">
+        <a routerLink="/" class="link dim light-gray shadow f6 tc db pa3 pa0-ns f5-ns dib-ns mr0 mr3-ns" title="Home">Home</a>
+        <a routerLink="/tagged/animation" class="link dim light-gray shadow f6 tc db pa3 pa0-ns f5-ns dib-ns mr0 mr3-ns" title="Animation">Animation</a>
+        <a routerLink="/tagged/concept-art" class="link dim light-gray shadow f6 tc db pa3 pa0-ns f5-ns dib-ns mr0 mr3-ns" title="Visual Development">Visual Development</a>
+        <a routerLink="/bio" class="link dim light-gray shadow f6 tc db pa3 pa0-ns f5-ns dib-ns mr0 mr3-ns" title="Bio / Contact">Bio / Contact</a>
+        <a routerLink="/resume" class="link dim light-gray shadow f6 tc db pa3 pa0-ns f5-ns dib-ns mr0 mr3-ns" title="Resume">Resume</a>
     </nav>
 </header>
 <div  class="mw9 center">
     <ng-content></ng-content>
 </div>
 <footer class="pv4 ph3 ph5-m ph6-l moon-gray mv5">
-    <small class="f6 db tc">© 2013-2017 <b class="ttu">Elizabeth I. Del Rosario</b></small>
+    <small class="f6 db tc">© 2013-2017 <b class="ttu">{{copyright}}</b></small>
     <div class="tc mt3 f7">
-        <a>Source</a>
+            <a>Source</a>
     </div>
 </footer>

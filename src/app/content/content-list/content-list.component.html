@@ -1,18 +1,20 @@
 <app-site-wrapper>
+    <h1 *ngIf="getTitle()" class="pt3 mb0 f3 fw5 tc">{{getTitle()}}</h1>
+
     <section class="pa3 pa5-ns bb b--black-10" *ngFor="let contentItem of contentList">
-        <h1 class="f1 f-5-l fw5 tc"><a class="link color-inherit" routerLink="/{{contentItem.id}}">{{contentItem.title}}</a></h1>
+        <h1 class="f1 f-5-l fw5 tc">
+            <a class="link color-inherit" routerLink="/{{contentItem.id}}">{{contentItem.title}}</a>
+        </h1>
         <div class="mv3 mv4-l f3-l tc">
-            <time class="ttu tracked gray">{{contentItem.publishedDate}}</time>
+            <time class="ttu tracked gray">{{contentItem.publishedDate | date:'MMMM dd yyyy'}}</time>
         </div>
-        <a *ngIf="contentItem.properties.thumbnail" class="db overflow-hidden" routerLink="/{{contentItem.id}}"><img class="w-100 f5 grow" [src]="contentItem.properties.thumbnail" /></a>
-        <div *ngIf="contentItem.properties.video">
+        <a *ngIf="contentItem.properties.thumbnail" class="db overflow-hidden" routerLink="/{{contentItem.id}}">
+            <img class="w-100 f5 grow" [src]="contentItem.properties.thumbnail" />
+        </a>
+        <div *ngIf="contentItem.displayType === 'video'">
             <div class="videoWrapper" [innerHTML]="contentItem.properties.video.code | sanitizeHtml"></div>
         </div>
-        <div class="f5 center lh-copy mw6 mw7-l mv3 mv4-l">
-            <p>
-                {{contentItem.summary}}
-            </p>
-        </div>
+        <div *ngIf="getContent(contentItem)" class="f5 center lh-copy mw6 mw7-l mv3 mv4-l" [innerHTML]="getContent(contentItem) | markdownToHtml"></div>
         <div class="tc center lh-copy mw6 mw7-l mv3 mv4-l">
             <a class="f5 no-underline black bg-animate hover-bg-blue hover-white inline-flex items-center pa3 ba border-box blue" routerLink="/{{contentItem.id}}">
                 <span>View Project</span>
@@ -20,6 +22,18 @@
                     <title>chevronRight icon</title>
                     <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
                 </svg>
+            </a>
+        </div>
+    </section>
+    <section class="pa3 pa5-ns bb b--black-10" *ngIf="contentList.length == 0">
+        <div class="f5 tc center lh-copy mw6 mw7-l mv3 mv4-l">We couldn't find anything here.</div>
+        <div class="tc center lh-copy mw6 mw7-l mv3 mv4-l">
+            <a class="f5 no-underline black bg-animate hover-bg-blue hover-white inline-flex items-center pa3 ba border-box blue" routerLink="/">
+                <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor">
+                    <title>chevronLeft icon</title>
+                    <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+                </svg>
+                <span>Home</span>
             </a>
         </div>
     </section>

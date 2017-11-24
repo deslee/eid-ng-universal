@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { Meta, Title } from "@angular/platform-browser";
 import { ActivatedRoute } from "@angular/router";
+import { environment } from '../../environments/environment';
 
 @Component({
     selector: 'app-home',
@@ -13,6 +14,6 @@ export class HomeComponent {
         private title: Title,
         private route: ActivatedRoute
     ) {
-        title.setTitle("Elizabeth I. Del Rosario");
+        title.setTitle(environment.title);
     }
 }

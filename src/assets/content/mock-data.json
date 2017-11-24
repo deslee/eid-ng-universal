@@ -1,0 +1,373 @@
+[
+  {
+    "id": "gemanimate-2",
+    "title": "Steven Universe Credits Shot for Gemanimate 2",
+    "type": "post",
+    "displayType": "video",
+    "isFeatured": true,
+    "tags": [
+      "animation"
+    ],
+    "categories": [],
+    "publishedDate": "2017-03-11",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "This is my shot for Gemanimate. It’s the background scene where the credits will be displayed at the end of the episode. I had a ton of fun working on this and I feel super fortunate to have gotten a chance to be part of such a cool project.",
+    "properties": {
+      "video": {
+        "code": "<iframe src=\"https://player.vimeo.com/video/207962269?title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "description": ""
+      },
+      "images": [],
+      "thumbnail": ""
+    }
+  },
+  {
+    "id": "scout-snacks",
+    "title": "Scout Snacks",
+    "type": "post",
+    "displayType": "imageSet",
+    "isFeatured": true,
+    "tags": [
+      "animation",
+      "storyboards"
+    ],
+    "categories": [],
+    "publishedDate": "2017-10-12",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "properties": {
+      "video": {
+        "code": "",
+        "description": ""
+      },
+      "images": [
+        {
+          "url": "http://78.media.tumblr.com/b0eb999f8a57e376210793fb8c69679d/tumblr_oy0ffuLpy01s5mn7vo4_1280.png"
+        },
+        {
+          "url": "http://78.media.tumblr.com/d5707b4d68da72973a10991d6308e7fc/tumblr_oy0ffuLpy01s5mn7vo1_1280.png"
+        },
+        {
+          "url": "http://78.media.tumblr.com/391c8204d29465472985b0cf912902de/tumblr_oy0ffuLpy01s5mn7vo2_1280.png"
+        },
+        {
+          "url": "http://78.media.tumblr.com/91c1c36c355f952796d813696db2746e/tumblr_oy0ffuLpy01s5mn7vo3_1280.png"
+        },
+        {
+          "url": "http://78.media.tumblr.com/0d9a265b8ac59cf27f097e8af9b6fa48/tumblr_oy0ffuLpy01s5mn7vo5_1280.png"
+        },
+        {
+          "url": "http://78.media.tumblr.com/1eb1515604cbe2f54eb907fa8324d552/tumblr_oy0ffuLpy01s5mn7vo6_1280.png"
+        }
+      ],
+      "thumbnail": "http://78.media.tumblr.com/b0eb999f8a57e376210793fb8c69679d/tumblr_oy0ffuLpy01s5mn7vo4_1280.png"
+    },
+    "content": "Storyboards for a short idea about a kid who unknowingly tries to share his scout snacks with a horde of ravenous raccoons."
+  },
+  {
+    "id": "weightloss-program",
+    "title": "Weight Loss Program",
+    "type": "post",
+    "displayType": "video",
+    "isFeatured": false,
+    "tags": [
+      "animation",
+      "storyboards"
+    ],
+    "categories": [],
+    "publishedDate": "",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "properties": {
+      "video": {
+        "code": "<iframe src=\"https://player.vimeo.com/video/224677214?title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "description": ""
+      },
+      "images": [],
+      "thumbnail": ""
+    }
+  },
+  {
+    "id": "this-old-store",
+    "title": "This Old Store",
+    "type": "post",
+    "displayType": "video",
+    "isFeatured": false,
+    "tags": [
+      "animation",
+      "storyboards"
+    ],
+    "categories": [],
+    "publishedDate": "2017-10-05",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "A side by side comparison of the animatic work that I did for the short, This Old Store, and the final animation.\n\nFinished animation:\n\n[https://www.youtube.com/watch?v=w9R6f3TMqtM](https://www.youtube.com/watch?v=w9R6f3TMqtM)",
+    "properties": {
+      "video": {
+        "code": "<iframe src=\"https://player.vimeo.com/video/237001044?title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "description": ""
+      },
+      "images": [],
+      "thumbnail": ""
+    }
+  },
+  {
+    "id": "kitchen-and-laundry",
+    "title": "Kitchen & Laundry",
+    "type": "post",
+    "displayType": "imageSet",
+    "isFeatured": true,
+    "tags": [
+      "concept-art"
+    ],
+    "categories": [],
+    "publishedDate": "2016-02-11",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "A simple background of a small kitchen and laundry room.",
+    "properties": {
+      "video": {
+        "code": "",
+        "description": ""
+      },
+      "images": [
+        {
+          "url": "http://78.media.tumblr.com/994b95cd79fa24e317a793c72e32be2b/tumblr_ow5hm5XThf1s5mn7vo1_1280.png"
+        }
+      ],
+      "thumbnail": "http://78.media.tumblr.com/994b95cd79fa24e317a793c72e32be2b/tumblr_ow5hm5XThf1s5mn7vo1_1280.png"
+    }
+  },
+  {
+    "id": "special-delivery",
+    "title": "Special Delivery",
+    "type": "post",
+    "displayType": "imageSet",
+    "isFeatured": false,
+    "tags": [
+      "concept-art"
+    ],
+    "categories": [],
+    "publishedDate": "2014-12-10",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "Mail Truck Interior Concept Art",
+    "properties": {
+      "video": {
+        "code": "",
+        "description": ""
+      },
+      "images": [
+        {
+          "url": "http://78.media.tumblr.com/b9ef64a6d39d9fb76e5eb99ee1cd3caa/tumblr_ngd04n7MTH1s5mn7vo3_1280.jpg"
+        },
+        {
+          "url": "http://78.media.tumblr.com/841068df3320d705c310c9f4ec95c5c3/tumblr_ngd04n7MTH1s5mn7vo1_1280.jpg"
+        },
+        {
+          "url": "http://78.media.tumblr.com/d031659882bcae2989846c423171dbb3/tumblr_ngd04n7MTH1s5mn7vo2_1280.jpg"
+        },
+        {
+          "url": "http://78.media.tumblr.com/c52cfc21111c1e5f21e6a36d95fe882f/tumblr_ngd04n7MTH1s5mn7vo7_r1_1280.jpg"
+        },
+        {
+          "url": "http://78.media.tumblr.com/e1cc970ff3998a32c4c6a4de1d1caf6e/tumblr_ngd04n7MTH1s5mn7vo4_r1_1280.jpg"
+        },
+        {
+          "url": "http://78.media.tumblr.com/71be5f2c763c448a622344ad8aea8429/tumblr_ngd04n7MTH1s5mn7vo6_r1_1280.jpg"
+        }
+      ],
+      "thumbnail": "http://78.media.tumblr.com/b9ef64a6d39d9fb76e5eb99ee1cd3caa/tumblr_ngd04n7MTH1s5mn7vo3_1280.jpg"
+    }
+  },
+  {
+    "id": "canyon",
+    "title": "Canyon",
+    "type": "post",
+    "displayType": "imageSet",
+    "isFeatured": false,
+    "tags": [
+      "concept-art"
+    ],
+    "categories": [],
+    "publishedDate": "2014-06-02",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "",
+    "properties": {
+      "video": {
+        "code": "",
+        "description": ""
+      },
+      "images": [
+        {
+          "url": "http://78.media.tumblr.com/f82dd3c32e2c1cc3e16e85ce10e38e4a/tumblr_n6js93Oh0q1s5mn7vo1_1280.jpg"
+        }
+      ],
+      "thumbnail": "http://78.media.tumblr.com/f82dd3c32e2c1cc3e16e85ce10e38e4a/tumblr_n6js93Oh0q1s5mn7vo1_1280.jpg"
+    }
+  },
+  {
+    "id": "satellite-dish",
+    "title": "Satellite Dish",
+    "type": "post",
+    "displayType": "imageSet",
+    "isFeatured": false,
+    "tags": [
+      "concept-art"
+    ],
+    "categories": [],
+    "publishedDate": "2014-04-06",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "30 minute speed paint",
+    "properties": {
+      "video": {
+        "code": "",
+        "description": ""
+      },
+      "images": [
+        {
+          "url": "http://78.media.tumblr.com/acf2da3774a34a8b661ceb2f1154689c/tumblr_n3mag7IHzH1s5mn7vo1_1280.jpg"
+        }
+      ],
+      "thumbnail": "http://78.media.tumblr.com/acf2da3774a34a8b661ceb2f1154689c/tumblr_n3mag7IHzH1s5mn7vo1_1280.jpg"
+    }
+  },
+  {
+    "id": "fire-fox",
+    "title": "Fire Fox",
+    "type": "post",
+    "displayType": "imageSet",
+    "isFeatured": false,
+    "tags": [
+      "concept-art"
+    ],
+    "categories": [],
+    "publishedDate": "2013-12-11",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "This was a quick painting done in 30 mins for the group Daily Spitpaints.\n\nEach day the group releases a few topics and members have 30 minutes to complete a painting pertaining to the topic. \n\nThe topic for this painting is Fire Fox.",
+    "properties": {
+      "video": {
+        "code": "",
+        "description": ""
+      },
+      "images": [
+        {
+          "url": "http://78.media.tumblr.com/696a604321000e8e1d20a3c51bb1deb0/tumblr_mxnt90TjlL1s5mn7vo1_1280.jpg"
+        }
+      ],
+      "thumbnail": "http://78.media.tumblr.com/696a604321000e8e1d20a3c51bb1deb0/tumblr_mxnt90TjlL1s5mn7vo1_1280.jpg"
+    }
+  },
+  {
+    "id": "thats-it",
+    "title": "That’s It (Animatic)",
+    "type": "post",
+    "displayType": "video",
+    "isFeatured": true,
+    "tags": [
+      "animation",
+      "storyboards"
+    ],
+    "categories": [],
+    "publishedDate": "2015-11-19",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "CYANIDE & HAPPINESS\n\nThat’s It (Animatic)\n\nThis is a side by side comparison of the animatic that I created and the final short that was published to ExplosmEntertainment’s Youtube channel. \n\n[Original Video](https://www.youtube.com/watch?v=PgX49xnAVgw)",
+    "properties": {
+      "video": {
+        "code": "<iframe src=\"https://player.vimeo.com/video/146304353?title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "description": ""
+      },
+      "images": [],
+      "thumbnail": ""
+    }
+  },
+  {
+    "id": "when-will-it-end-animatic",
+    "title": "Cyanide & Happiness: When Will It End - Animatic",
+    "type": "post",
+    "displayType": "video",
+    "isFeatured": true,
+    "tags": [
+      "animation",
+      "storyboards"
+    ],
+    "categories": [],
+    "publishedDate": "2017-10-05",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "This is a side by side comparison of the animatic I created for the Cyanide and Happiness short, When Will It End. ",
+    "properties": {
+      "video": {
+        "code": "<iframe src=\"https://player.vimeo.com/video/236995324?title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>",
+        "description": ""
+      },
+      "images": [],
+      "thumbnail": ""
+    }
+  },
+  {
+    "id": "elis-ward",
+    "title": "Elis Ward",
+    "type": "post",
+    "displayType": "imageSet",
+    "isFeatured": true,
+    "tags": [
+      "storyboards"
+    ],
+    "categories": [],
+    "publishedDate": "2014-04-26",
+    "updatedDate": "",
+    "author": "",
+    "metaDescription": "",
+    "summary": "",
+    "content": "Storyboard, Character, and Set design for an animated short story pitch about a writer struggling with depression.",
+    "properties": {
+      "video": {
+        "code": "",
+        "description": ""
+      },
+      "images": [
+        {
+          "url": "http://78.media.tumblr.com/17be22f6bd9774c0d85a9c4efd8e7ba1/tumblr_n4oaeeBlLm1s5mn7vo2_1280.jpg"
+        },
+        {
+          "url": "http://78.media.tumblr.com/2782cb146858ba87a89ee64cce60d521/tumblr_n4oaeeBlLm1s5mn7vo1_1280.jpg"
+        },
+        {
+          "url": "http://78.media.tumblr.com/05cb5a425ad2018be1e3a2ce5b48fc91/tumblr_n4oaeeBlLm1s5mn7vo3_1280.jpg"
+        },
+        {
+          "url": "http://78.media.tumblr.com/06826d6d74e0218a3fd1081462a5116c/tumblr_n4oaeeBlLm1s5mn7vo4_1280.jpg"
+        }
+      ],
+      "thumbnail": "http://78.media.tumblr.com/17be22f6bd9774c0d85a9c4efd8e7ba1/tumblr_n4oaeeBlLm1s5mn7vo2_1280.jpg"
+    }
+  }
+]

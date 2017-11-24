@@ -23,7 +23,11 @@ export class AppComponent implements OnInit {
         var previousRoute = _.nth(AppComponent.previousRoutesUrl, -2);
 
         if (currentRoute != previousRoute) {
-          window.scrollTo(0, 0);
+          window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          })
         }
         else {
         }

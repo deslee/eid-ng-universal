@@ -9,30 +9,50 @@ import { ContentItemComponent } from './content/content-item/content-item.compon
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-    { 
-        path: '', 
+    {
+        path: '',
         component: ContentListComponent,
         data: {
-            title: 'Elizabeth I. Del Rosario'
+            page: 'index'
         },
         resolve: {
             contentList: ContentListResolver
         }
     },
     { path: 'bio', component: AboutComponent },
-    { 
-        path: 'archives', 
-        component: ContentListComponent, 
+    {
+        path: 'archives',
+        component: ContentListComponent,
         data: {
-            title: 'Archives'
+            page: 'archives'
         },
         resolve: {
             contentList: ContentListResolver
         }
     },
-    { 
-        path: ':id', 
-        component: ContentItemComponent, 
+    {
+        path: 'categories/:categories',
+        component: ContentListComponent,
+        data: {
+            page: 'categories'
+        },
+        resolve: {
+            contentList: ContentListResolver
+        }
+    },
+    {
+        path: 'tagged/:tags',
+        component: ContentListComponent,
+        data: {
+            page: 'tagged'
+        },
+        resolve: {
+            contentList: ContentListResolver
+        }
+    },
+    {
+        path: ':id',
+        component: ContentItemComponent,
         resolve: {
             contentItem: ContentItemResolver
         }
@@ -44,6 +64,6 @@ const routes: Routes = [
         ContentModule,
         RouterModule.forRoot(routes, { initialNavigation: "enabled" })
     ],
-    exports: [ RouterModule ]
+    exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

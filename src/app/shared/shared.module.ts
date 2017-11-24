@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SiteWrapperComponent } from './site-wrapper/site-wrapper.component';
 import { RouterModule } from '@angular/router';
-import { SanitizeHtml } from './sanitize-html.pipe';
+import { SanitizeHtml } from './pipes/sanitize-html.pipe';
+import { MarkdownToHtml } from './pipes/markdown-to-html.pipe';
 
 @NgModule({
     imports: [
@@ -11,11 +12,13 @@ import { SanitizeHtml } from './sanitize-html.pipe';
     ],
     declarations: [
         SiteWrapperComponent,
-        SanitizeHtml
+        SanitizeHtml,
+        MarkdownToHtml
     ],
     exports: [
         SiteWrapperComponent,
-        SanitizeHtml
+        SanitizeHtml,
+        MarkdownToHtml
     ]
 })
 export class SharedModule {}
