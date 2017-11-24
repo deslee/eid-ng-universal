@@ -1,0 +1,7 @@
+.shadow {
+    text-shadow: 2px 2px black;
+}
+
+.fire-effect {
+    background-color: rgba(150, 0, 7, .1);
+}

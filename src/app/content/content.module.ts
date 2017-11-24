@@ -5,10 +5,12 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { ContentItemComponent } from './content-item/content-item.component';
 import { ContentService } from './shared/content.service';
 import { MarkdownToHtmlModule } from 'markdown-to-html-pipe';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
     imports: [
         CommonModule,
+        SharedModule,
         ContentRoutingModule,
         MarkdownToHtmlModule
     ],

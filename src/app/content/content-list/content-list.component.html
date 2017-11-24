@@ -1,11 +1,25 @@
-<div *ngFor="let contentItem of contentList">
-    <img *ngIf="contentItem.properties.thumbnail" [src]="contentItem.properties.thumbnail" class="thumbnail" />
-    <h1><a routerLink="{{contentItem.id}}">Title: {{contentItem.title}}</a></h1>
-    <div>{{contentItem.summary}}</div>
-
-    <div *ngIf="contentItem.displayType === 'text'">text</div>
-    <div *ngIf="contentItem.displayType === 'video'">videos</div>
-    <div *ngIf="contentItem.displayType === 'imageCarousel'">images</div>
-
-    <br><br>
-</div>
+<app-site-wrapper>
+<section class="center avenir" *ngFor="let contentItem of contentList">
+    <article class="bb b--black-10">
+        <a class="db pv4 ph3 no-underline black dim" routerLink="{{contentItem.id}}">
+        <div class="flex flex-column flex-row-l">
+            <div *ngIf="contentItem.properties.thumbnail" class="pr3-l mb4 mb0-l w-100 w-40-l">
+                <img [src]="contentItem.properties.thumbnail" class="db w-100" alt="Photo of a dimly lit room with a computer interface terminal.">
+            </div>
+            <div class="w-100 w-60-l pl3-l">
+            <h1 class="f2 fw1 baskerville mt0 lh-title"><a class="link color-inherit" routerLink="{{contentItem.id}}">{{contentItem.title}}</a></h1>
+            <div class="f6 f5-l lh-copy">
+                {{contentItem.summary}}
+                <div *ngIf="contentItem.displayType === 'text'">text</div>
+                <div *ngIf="contentItem.displayType === 'video'">videos</div>
+                <div *ngIf="contentItem.displayType === 'imageCarousel'">images</div>
+            </div>
+            <div class="mt3">
+                <time class="f6 ttu tracked gray">{{contentItem.publishedDate}}</time>
+            </div>
+            </div>
+        </div>
+        </a>
+    </article>
+</section>
+</app-site-wrapper>
