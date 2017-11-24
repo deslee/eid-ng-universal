@@ -3,7 +3,9 @@ import * as _ from "lodash";
 import { Content } from "./src/app/content/shared/content.model";
 
 const paths: string[] = [
-  '/'
+  '/',
+  'bio',
+  'not-found'
 ];
 
 var contentService = new ContentService();

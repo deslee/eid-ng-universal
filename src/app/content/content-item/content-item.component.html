@@ -1,13 +1,20 @@
 <ng-template #contentTemplate>
     <app-site-wrapper>
-        <div class="pa3 pa5-ns">
-            <h1>{{contentItem.title}}</h1>
-            <div *ngIf="contentItem.displayType === 'text'">text</div>
-            <div *ngIf="contentItem.displayType === 'video'">videos</div>
-            <div *ngIf="contentItem.displayType === 'imageCarousel'">images</div>
+        <section class="pa3 pa5-ns bb b--black-10">
+            <h1 class="f1 f-5-l fw5 tc"><a class="link color-inherit" routerLink="/{{contentItem.id}}">{{contentItem.title}}</a></h1>
+            <div class="mv3 mv4-l f3-l tc">
+                <time class="ttu tracked gray">{{contentItem.publishedDate}}</time>
+            </div>
+
+            <div class="f5 center lh-copy mw6 mw7-l mv5" [innerHTML]="contentItem.content | MarkdownToHtml"></div>
             
-            <div [innerHTML]="contentItem.content | MarkdownToHtml"></div>
-        </div>
+            <div *ngIf="contentItem.displayType === 'video'">videos</div>
+            <div *ngIf="contentItem.displayType === 'imageSet'">
+                <div class="db overflow-hidden mv5" *ngFor="let image of contentItem.properties.images">
+                    <img class="w-100 f5" [src]="image.url" />
+                </div>
+            </div>
+        </section>
     </app-site-wrapper>
 </ng-template>
 <ng-template #notFoundTemplate>

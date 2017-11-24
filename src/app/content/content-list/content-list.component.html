@@ -4,23 +4,20 @@
         <div class="mv3 mv4-l f3-l tc">
             <time class="ttu tracked gray">{{contentItem.publishedDate}}</time>
         </div>
-        <a class="db overflow-hidden" routerLink="/{{contentItem.id}}"><img class="w-100 f5 grow" *ngIf="contentItem.properties.thumbnail" [src]="contentItem.properties.thumbnail" /></a>
-        <div class="f5 center lh-copy mw6 mw7-l mv3">
+        <a *ngIf="contentItem.properties.thumbnail" class="db overflow-hidden" routerLink="/{{contentItem.id}}"><img class="w-100 f5 grow" [src]="contentItem.properties.thumbnail" /></a>
+        <div class="f5 center lh-copy mw6 mw7-l mv3 mv4-l">
             <p>
-                Typography has one plain duty before it and that is to convey information
-                in writing. No argument or consideration can absolve typography from this
-                duty. A printed work which cannot be read becomes a product without
-                purpose.
+                {{contentItem.summary}}
             </p>
-            <div class="tc">
-                <a class="f5 no-underline black bg-animate hover-bg-blue hover-white inline-flex items-center pa3 ba border-box blue" routerLink="/{{contentItem.id}}">
-                    <span>View Project</span>
-                    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
-                        <title>chevronRight icon</title>
-                        <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
-                    </svg>
-                </a>
-            </div>
+        </div>
+        <div class="tc center lh-copy mw6 mw7-l mv3 mv4-l">
+            <a class="f5 no-underline black bg-animate hover-bg-blue hover-white inline-flex items-center pa3 ba border-box blue" routerLink="/{{contentItem.id}}">
+                <span>View Project</span>
+                <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+                    <title>chevronRight icon</title>
+                    <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+                </svg>
+            </a>
         </div>
     </section>
 </app-site-wrapper>
