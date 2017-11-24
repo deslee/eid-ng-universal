@@ -95,10 +95,9 @@ This is a test video post
             `,
             properties: {
                 video: {
-                    url: 'https://vimeo.com/243940584',
+                    code: '<iframe src="https://player.vimeo.com/video/237001044?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
                     description: 'this is a video'
-                },   
-                thumbnail: 'https://i.vimeocdn.com/video/668208019_780x439.webp',
+                }
             }
         }
     ];

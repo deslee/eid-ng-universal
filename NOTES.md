@@ -9,3 +9,11 @@ TODO: investigate page "flickering" on server generated responses
 
 fixed with initialnavigation: enabled
 may still have issues for styles
+
+used a hack to scroll back up to the top after navigation
+
+added a html sanitization pipe to allow for embed of iframes
+
+added css classes to allow for fluid width videos
+
+next steps: data modeling

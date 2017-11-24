@@ -5,6 +5,9 @@
             <time class="ttu tracked gray">{{contentItem.publishedDate}}</time>
         </div>
         <a *ngIf="contentItem.properties.thumbnail" class="db overflow-hidden" routerLink="/{{contentItem.id}}"><img class="w-100 f5 grow" [src]="contentItem.properties.thumbnail" /></a>
+        <div *ngIf="contentItem.properties.video">
+            <div class="videoWrapper" [innerHTML]="contentItem.properties.video.code | sanitizeHtml"></div>
+        </div>
         <div class="f5 center lh-copy mw6 mw7-l mv3 mv4-l">
             <p>
                 {{contentItem.summary}}

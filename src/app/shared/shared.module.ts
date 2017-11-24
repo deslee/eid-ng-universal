@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SiteWrapperComponent } from './site-wrapper/site-wrapper.component';
 import { RouterModule } from '@angular/router';
+import { SanitizeHtml } from './sanitize-html.pipe';
 
 @NgModule({
     imports: [
@@ -9,10 +10,12 @@ import { RouterModule } from '@angular/router';
         RouterModule
     ],
     declarations: [
-        SiteWrapperComponent
+        SiteWrapperComponent,
+        SanitizeHtml
     ],
     exports: [
-        SiteWrapperComponent
+        SiteWrapperComponent,
+        SanitizeHtml
     ]
 })
 export class SharedModule {}
