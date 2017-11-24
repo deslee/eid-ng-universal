@@ -1,25 +1,26 @@
 <app-site-wrapper>
-<section class="center avenir" *ngFor="let contentItem of contentList">
-    <article class="bb b--black-10">
-        <a class="db pv4 ph3 no-underline black dim" routerLink="{{contentItem.id}}">
-        <div class="flex flex-column flex-row-l">
-            <div *ngIf="contentItem.properties.thumbnail" class="pr3-l mb4 mb0-l w-100 w-40-l">
-                <img [src]="contentItem.properties.thumbnail" class="db w-100" alt="Photo of a dimly lit room with a computer interface terminal.">
-            </div>
-            <div class="w-100 w-60-l pl3-l">
-            <h1 class="f2 fw1 baskerville mt0 lh-title"><a class="link color-inherit" routerLink="{{contentItem.id}}">{{contentItem.title}}</a></h1>
-            <div class="f6 f5-l lh-copy">
-                {{contentItem.summary}}
-                <div *ngIf="contentItem.displayType === 'text'">text</div>
-                <div *ngIf="contentItem.displayType === 'video'">videos</div>
-                <div *ngIf="contentItem.displayType === 'imageCarousel'">images</div>
-            </div>
-            <div class="mt3">
-                <time class="f6 ttu tracked gray">{{contentItem.publishedDate}}</time>
-            </div>
+    <section class="pa3 pa5-ns bb b--black-10" *ngFor="let contentItem of contentList">
+        <h1 class="f1 f-5-l fw5 tc"><a class="link color-inherit" routerLink="/{{contentItem.id}}">{{contentItem.title}}</a></h1>
+        <div class="mv3 mv4-l f3-l tc">
+            <time class="ttu tracked gray">{{contentItem.publishedDate}}</time>
+        </div>
+        <a class="db overflow-hidden" routerLink="/{{contentItem.id}}"><img class="w-100 f5 grow" *ngIf="contentItem.properties.thumbnail" [src]="contentItem.properties.thumbnail" /></a>
+        <div class="f5 center lh-copy mw6 mw7-l mv3">
+            <p>
+                Typography has one plain duty before it and that is to convey information
+                in writing. No argument or consideration can absolve typography from this
+                duty. A printed work which cannot be read becomes a product without
+                purpose.
+            </p>
+            <div class="tc">
+                <a class="f5 no-underline black bg-animate hover-bg-blue hover-white inline-flex items-center pa3 ba border-box blue" routerLink="/{{contentItem.id}}">
+                    <span>View Project</span>
+                    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor">
+                        <title>chevronRight icon</title>
+                        <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+                    </svg>
+                </a>
             </div>
         </div>
-        </a>
-    </article>
-</section>
+    </section>
 </app-site-wrapper>

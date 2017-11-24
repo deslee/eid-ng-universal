@@ -17,7 +17,7 @@ export class ContentListComponent {
         private title: Title,
         private route: ActivatedRoute
     ) {
-        title.setTitle("hello content");
+        title.setTitle(this.route.snapshot.data.title);
         this.route.data.subscribe((data: { contentList: Content[] }) => {
             this.contentList = data.contentList;
         })

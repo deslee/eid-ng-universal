@@ -12,6 +12,7 @@ export class ContentListResolver implements Resolve<Content[]> {
     ) {}
 
     resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Content[]> {
+        //console.log(route.data)
         return this.contentService.getAllContent().first();
     }
 }

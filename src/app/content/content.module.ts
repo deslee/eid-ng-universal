@@ -1,25 +1,31 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { ContentRoutingModule } from './content-routing.module';
-import { ContentListComponent } from './content-list/content-list.component';
-import { ContentItemComponent } from './content-item/content-item.component';
-import { ContentService } from './shared/content.service';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { ContentListComponent } from "./content-list/content-list.component";
 import { MarkdownToHtmlModule } from 'markdown-to-html-pipe';
-import { SharedModule } from '../shared/shared.module';
+import { ContentItemComponent } from "./content-item/content-item.component";
+import { SharedModule } from "../shared/shared.module";
+import { ContentListResolver } from "./content-list/content-list-resolver.service";
+import { ContentService } from "./shared/content.service";
+import { ContentItemResolver } from "./content-item/content-item-resolver.service";
 
 @NgModule({
     imports: [
         CommonModule,
         SharedModule,
-        ContentRoutingModule,
+        RouterModule,
         MarkdownToHtmlModule
     ],
     providers: [
-        ContentService
+        ContentService,
+        ContentListResolver,
+        ContentItemResolver
     ],
     declarations: [
         ContentListComponent,
         ContentItemComponent
     ]
 })
-export class ContentModule {}
+export class ContentModule {
+
+}

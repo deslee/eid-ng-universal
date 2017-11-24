@@ -19,6 +19,6 @@ export class ContentItemComponent {
         this.route.data.subscribe((data: { contentItem: Content }) => {
             this.contentItem = data.contentItem;
         })
-        title.setTitle("hello content");
+        title.setTitle(this.contentItem ? this.contentItem.title : 'Not Found');
     }
 }
