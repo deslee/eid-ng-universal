@@ -1,6 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Content } from "./content.model";
 import { Observable } from "rxjs";
+import "rxjs/add/operator/delay";
 import * as _ from "lodash";
 
 @Injectable()
