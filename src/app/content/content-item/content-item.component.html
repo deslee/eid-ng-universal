@@ -6,9 +6,11 @@
                 <time class="ttu tracked gray">{{contentItem.publishedDate | date:'MMMM dd yyyy'}}</time>
             </div>
 
-            <div class="f5 center lh-copy mw6 mw7-l mv5" [innerHTML]="contentItem.content | markdownToHtml"></div>
+            <div *ngIf="contentItem.content" class="f5 center lh-copy mw6 mw7-l mv5" [innerHTML]="contentItem.content | markdownToHtml"></div>
             
-            <div *ngIf="contentItem.displayType === 'video'">videos</div>
+            <div *ngIf="contentItem.displayType === 'video'">
+                <div class="videoWrapper" [innerHTML]="contentItem.properties.video.code | sanitizeHtml"></div>
+            </div>
             <div *ngIf="contentItem.displayType === 'imageSet'">
                 <div class="db overflow-hidden mv5" *ngFor="let image of contentItem.properties.images">
                     <img class="w-100 f5" [src]="image.url" />

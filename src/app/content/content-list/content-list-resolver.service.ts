@@ -4,7 +4,7 @@ import { Content } from "../shared/content.model";
 import { ContentService } from "../shared/content.service";
 import { ActivatedRouteSnapshot, RouterStateSnapshot } from "@angular/router/src/router_state";
 import { Observable } from "rxjs";
-import 'rxjs/add/operator/map'
+import 'rxjs/add/operator/map';
 import * as _ from 'lodash';
 
 @Injectable()

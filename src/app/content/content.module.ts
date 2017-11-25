@@ -8,6 +8,7 @@ import { ContentListResolver } from "./content-list/content-list-resolver.servic
 import { ContentService } from "./shared/content.service";
 import { ContentItemResolver } from "./content-item/content-item-resolver.service";
 import { HttpClientModule } from "@angular/common/http";
+import { ContentLoaderService } from "./shared/content-loader.service";
 
 @NgModule({
     imports: [
@@ -19,7 +20,8 @@ import { HttpClientModule } from "@angular/common/http";
     providers: [
         ContentService,
         ContentListResolver,
-        ContentItemResolver
+        ContentItemResolver,
+        ContentLoaderService
     ],
     declarations: [
         ContentListComponent,

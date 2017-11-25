@@ -3,5 +3,5 @@ export const environment = {
   title: 'Elizabeth I. Del Rosario',
   subtitle: 'Storyboard and Visual Development Artist',
   copyright: 'Elizabeth I. Del Rosario',
-  contentLocation: 'assets/content/mock-data.json'
+  contentLocation: 'https://raw.githubusercontent.com/deslee/eid-json/master/data.json'
 };
