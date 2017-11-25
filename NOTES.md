@@ -17,3 +17,7 @@ added a html sanitization pipe to allow for embed of iframes
 added css classes to allow for fluid width videos
 
 next steps: data modeling
+https://github.com/jdorn/json-editor
+
+weird issues with netlify cms
+fixed the way rxjs is imported
