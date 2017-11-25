@@ -1,10 +1,8 @@
 import { Injectable } from "@angular/core";
-import { Resolve } from "@angular/router";
+import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot } from "@angular/router";
 import { Content } from "../shared/content.model";
 import { ContentService } from "../shared/content.service";
-import { ActivatedRouteSnapshot, RouterStateSnapshot } from "@angular/router/src/router_state";
-import { Observable } from "rxjs";
-import 'rxjs/add/operator/map';
+import { Observable } from "rxjs/Observable";
 import * as _ from 'lodash';
 
 @Injectable()

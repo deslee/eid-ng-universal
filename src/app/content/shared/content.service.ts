@@ -1,12 +1,13 @@
 import { Injectable } from "@angular/core";
 import { Content } from "./content.model";
-import { Observable, Subject } from "rxjs";
+import { Observable } from "rxjs/Observable";
+import { Subject } from "rxjs/Subject";
+import "rxjs/add/operator/do";
+import 'rxjs/add/observable/of';
+import "rxjs/add/operator/map";
 import { environment } from '../../../environments/environment';
 import { ContentLoaderService } from "./content-loader.service";
 import * as _ from "lodash";
-import "rxjs/add/operator/do";
-import "rxjs/add/operator/map";
-import "rxjs/add/operator/first";
 
 @Injectable()
 export class ContentService {
