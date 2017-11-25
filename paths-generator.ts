@@ -10,7 +10,8 @@ const https = require('https');
 const paths: string[] = [
   '/',
   'bio',
-  'not-found'
+  'not-found',
+  'resume'
 ];
 
 var contentLoader: ContentLoaderService = {
@@ -41,6 +42,13 @@ var contentLoader: ContentLoaderService = {
 
 var contentService = new ContentService(contentLoader);
 
-export var getRoutes = contentService.getAllContent().map((contentList: Content[]) => {
-  return _.map(contentList, (c: Content) => c.id).concat(paths);
-});
+export var getRoutes = contentService.getAllContent()
+  .map((contentList: Content[]) => {
+
+    var tags = _.uniq(_.flatMap(contentList, (c: Content) => c.tags)).map(s => "tagged/"+s);
+    var categories = _.uniq(_.flatMap(contentList, (c: Content) => c.categories)).map(s => "tagged/"+s);
+
+    return _.map(contentList, (c: Content) => c.id)
+      .concat(tags.concat(categories))
+      .concat(paths);
+  });

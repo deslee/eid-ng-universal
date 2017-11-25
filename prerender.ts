@@ -1,7 +1,7 @@
 // Load zone.js for the server.
 import 'zone.js/dist/zone-node';
 import 'reflect-metadata';
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import * as fs from 'fs-extra';
 import { join } from 'path';
 
 import { enableProdMode } from '@angular/core';
@@ -19,7 +19,7 @@ const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./dist/server/mai
 const BROWSER_FOLDER = join(process.cwd(), 'browser');
 
 // Load the index.html file containing referances to your application bundle.
-const index = readFileSync(join('browser', 'index.html'), 'utf8');
+const index = fs.readFileSync(join('browser', 'index.html'), 'utf8');
 
 let previousRender = Promise.resolve();
 
@@ -29,9 +29,7 @@ getRoutes.subscribe((routes) => {
     var fullPath = join(BROWSER_FOLDER, route);
   
     // Make sure the directory structure is there
-    if(!existsSync(fullPath)){
-      mkdirSync(fullPath);
-    }
+    fs.ensureDirSync(fullPath);
   
     // Writes rendered HTML to index.html, replacing the file if it already exists.
     previousRender = previousRender.then(_ => renderModuleFactory(AppServerModuleNgFactory, {
@@ -42,7 +40,7 @@ getRoutes.subscribe((routes) => {
       ]
     })).then(html => {
       let path = join(fullPath, 'index.html');
-      writeFileSync(path, html);
+      fs.writeFileSync(path, html);
       console.log("Generated: " + path);
     });
   });
